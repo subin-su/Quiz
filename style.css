@@ -1,0 +1,29 @@
+#high{
+    text-align: left;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+#para{
+    color:purple;
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+#button{
+    color:yellow;
+    margin-left: 400px;
+    background-color: purple;
+    
+    text-align: center;
+    height:90%;
+    width: 30%;
+    font-size: 20px;
+}
+.hline { 
+    margin-top: 100px; width:100%; height:5px; background: rgb(104, 111, 204) }
+    h2{
+        text-align: center;
+        color: gray;
+        font-size: 30px;
+    }
