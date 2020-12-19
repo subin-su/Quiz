@@ -1,24 +1,72 @@
 var high=document.getElementById("high");
 var button=document.getElementById("button");
-var container=document.getElementById("contianer")
-container.textContent="Welcome" //to the quiz. Please choose among 4 options and end of quiz submit with your initials to get score"
-function arr(){
-var  questions=["What does CSS stand for ?","What do you use to link JS file on hmtl ?",
-"What is purpose of css ?", "How to call a function() ?"]}
+var container=document.getElementById("container")
+var link=document.getElementById("link")
 
-var answer1=["Cascading style sheet","Contra costa county","function()", "Congress congo can"]
-var answer2=["src","Contra costa county","Community College congress", "Congress congo can"]
-var answer3=["Cascading style sheet","styling","Community College congress", "function()"]
-var answer4=["Cascading style sheet","Contra costa county","Community College congress", "function()"]
+button.addEventListener("click",function(event){
+    event.preventDefault()
+    link()
 
-    function first(){
+    
+})
+container.textContent="Welcome to the quiz. Please choose among 4 options and end of quiz submit with your initials to get score"
+
+let questions= [
+    {
+      id: 1,
+      question: "Who invented computer?",
+      answer: "Charles Babbage",
+      option: [
+        "Thomas Edison",
+        "Albert einstein",
+        "Charles Babbage",
+        "None of the above"
+      ]
+    },
+    {
+      id: 2,
+      question: "When did first program founded?",
+      answer: "1989",
+      option: [
+        "1982",
+        "1980",
+        "1780",
+        "1989"
+      ]
+    },
+    {
+      id: 3,
+      question: "What is the name of first program?",
+      answer: "High-level language",
+      option: [
+        "Machine level language",
+        "javascript",
+        "High-level language",
+        "css"
+      ]
+    },
+    {
+      id: 4,
+      question: "What is the Capital of Usa?",
+      answer: "Washington D.c",
+      option: [
+        "New York",
+        "Washington D.C",
+        "California",
+        "Virginia"
+      ]
+    },
+    {
+      id: 5,
+      question: "Who invented Java?",
+      answer: "James Gosling",
+      option: [
+        "Bill Gates",
+        "Steve Jobs",
+        "Daphne koller",
+        "James Gosling"
+      ]
+    }
+  ]
+
         
-        for(var i=0;i<questions.length;i++){
-       
-            var storel=questions[i]
-
-        }
-        document.write(storel)
-        }
-button.onclick=first;
-document.getElementById("arr").setAttribute(question,style)
