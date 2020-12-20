@@ -1,0 +1,30 @@
+
+.title{
+    font-size:25px;
+    text-align: ceneter;
+    font-family: cursive;
+}
+.title1{
+    font-size:20px;
+    text-align: ceneter;
+    font-family: cursive;
+}
+#question{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.option{
+    background-color:rgb(236, 235, 134);
+    width: 400px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+.option:hover{
+    background-color: rebeccapurple;
+}
