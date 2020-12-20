@@ -11,7 +11,20 @@ var opt4 = document.getElementById('opt4');
 var nextButton = document.getElementById('nextButton');
 var resultCont = document.getElementById('result');
 var title1=document.getElementById("title1")
-var form=document.getElementById("form")
+var x=document.getElementById("submit")
+var h3=document.getElementById("h3")
+var h3=document.getElementById("h5")
+var x=document.getElementById("i")
+
+
+x.addEventListener("click",function(event){
+	event.preventDeafult()
+	location.href="Quiz.html"
+
+})
+
+
+h3.textContent="jndek;jndkdjndjon"
 var time=60;
 var id=setInterval(function(){
     
@@ -53,11 +66,28 @@ function loadNextQuestion () {
 		nextButton.textContent = 'Finish';
 	}
 	if(currentQuestion == totQuestions){
-        sessionStorage.setItem("score", score);
-        sessionStorage.setItem("time",time);
+        var s=sessionStorage.setItem("score", score);
+        var t=sessionStorage.setItem("time",time);
      window.location.href="final.html"
-     return}
+     return;}
 	loadQuestion(currentQuestion);
 }
 
 loadQuestion(currentQuestion);
+
+
+// x.addEventListener('click',function(event){
+
+//     event.preventDefault()
+//     var name = document.querySelector('name').value;
+//     localStorage.setItem('name',name );
+//     window.location.href="fron.html"
+//     h3.append(s);
+//     h5.append(t)
+
+    
+//})
+x.addEventListener("click",function(){
+    window.location.href="fron.html"
+})
+

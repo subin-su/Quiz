@@ -28,3 +28,13 @@
 .option:hover{
     background-color: rebeccapurple;
 }
+#high{
+    text-emphasis:center;
+    font-size: 30px;
+}
+.h1{
+    text-align: center;
+    color: palegreen;
+    font-size: 25px;
+    font-family: cursive;
+}
