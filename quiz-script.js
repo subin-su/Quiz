@@ -11,20 +11,11 @@ var opt4 = document.getElementById('opt4');
 var nextButton = document.getElementById('nextButton');
 var resultCont = document.getElementById('result');
 var title1=document.getElementById("title1")
-var x=document.getElementById("submit")
-var h3=document.getElementById("h3")
-var h3=document.getElementById("h5")
-var x=document.getElementById("i")
 
 
-x.addEventListener("click",function(event){
-	event.preventDeafult()
-	location.href="Quiz.html"
-
-})
+//
 
 
-h3.textContent="jndek;jndkdjndjon"
 var time=60;
 var id=setInterval(function(){
     
@@ -66,9 +57,10 @@ function loadNextQuestion () {
 		nextButton.textContent = 'Finish';
 	}
 	if(currentQuestion == totQuestions){
-        var s=sessionStorage.setItem("score", score);
-        var t=sessionStorage.setItem("time",time);
-     window.location.href="final.html"
+        localStorage.setItem("score", score);
+        localStorage.setItem("time",time);
+	 window.location.href="final.html"
+	//submit.addE
      return;}
 	loadQuestion(currentQuestion);
 }
@@ -86,8 +78,4 @@ loadQuestion(currentQuestion);
 //     h5.append(t)
 
     
-//})
-x.addEventListener("click",function(){
-    window.location.href="fron.html"
-})
 
